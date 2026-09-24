@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Sardon - Professional Seaman Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .maritime-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-20">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-blue-900 flex items-center gap-2">
+                <i class="fa-solid fa-anchor text-blue-600"></i> Stephen Sardon
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience & Vessels</a>
+                <a href="#certificates" class="text-gray-700 hover:text-blue-600 transition">Certificates</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-4 space-y-3">
+            <a href="#home" class="block text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
+            <a href="#experience" class="block text-gray-700 hover:text-blue-600">Experience & Vessels</a>
+            <a href="#certificates" class="block text-gray-700 hover:text-blue-600">Certificates</a>
+            <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="maritime-bg text-white min-h-screen flex items-center pt-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+                <span class="bg-blue-600 text-blue-100 text-sm font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Professional Seafarer</span>
+                <h1 class="text-4xl md:text-6xl font-bold mt-4 mb-4">Hi, I'm <span class="text-sky-300">Stephen Sardon</span></h1>
+                <p class="text-xl text-gray-300 mb-8">Dedicated, safety-oriented, and experienced seaman ready for global maritime operations, vessel maintenance, and deck navigation support.</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg">Hire / Contact Me</a>
+                    <a href="#experience" class="border border-white hover:bg-white hover:text-blue-900 text-white px-8 py-3 rounded-full font-semibold transition">View Experience</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-sky-400 shadow-2xl bg-blue-950 flex items-center justify-center">
+                    <!-- Placeholder for profile image or fallback icon -->
+                    <i class="fa-solid fa-user-tie text-sky-300 text-9xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">About Me</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded"></div>
+                <p class="text-gray-600 mt-4">Committed to upholding the highest standards of maritime safety, vessel upkeep, and efficient teamwork out at sea.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 text-center card-hover transition">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-900">Safety First</h3>
+                    <p class="text-gray-600">Strict adherence to ISM Code, SOLAS, MARPOL, and onboard emergency response drills.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 text-center card-hover transition">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-900">Vessel Maintenance</h3>
+                    <p class="text-gray-600">Experienced in chipping, painting, rust prevention, mooring operations, and crane/cargo handling.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100 text-center card-hover transition">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-900">Team Player</h3>
+                    <p class="text-gray-600">Strong multicultural communication skills, reliable under pressure, and adaptable to long tours of duty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Vessel Types -->
+    <section id="experience" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Experience & Vessel Expertise</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded"></div>
+                <p class="text-gray-600 mt-4">A breakdown of my background working across different vessel types and operational environments.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Vessel Types -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-blue-900 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-ship text-blue-600"></i> Vessel Types Handled
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Bulk Carriers</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Container Ships</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> General Cargo Vessels</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-check text-green-500"></i> Tankers / Offshore Support (if applicable)</li>
+                    </ul>
+                </div>
+
+                <!-- Core Duties -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-xl font-bold text-blue-900 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-list-check text-blue-600"></i> Core Responsibilities
+                    </h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-compass text-blue-500"></i> Watchkeeping and lookout duties</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-anchor text-blue-500"></i> Mooring, unmooring, and anchoring operations</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-paintbrush text-blue-500"></i> Rust removal, chipping, priming, and painting</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-box text-blue-500"></i> Cargo gear preparation and hatch cover operations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Certifications & Compliance</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded"></div>
+                <p class="text-gray-600 mt-4">Fully compliant with STCW requirements and international maritime standards.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-center">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <i class="fa-solid fa-certificate text-3xl text-blue-600 mb-3"></i>
+                    <h4 class="font-semibold text-blue-900">BST</h4>
+                    <p class="text-xs text-gray-500 mt-1">Basic Safety Training</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <i class="fa-solid fa-shield text-3xl text-blue-600 mb-3"></i>
+                    <h4 class="font-semibold text-blue-900">PSCRB</h4>
+                    <p class="text-xs text-gray-500 mt-1">Survival Craft & Rescue Boats</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <i class="fa-solid fa-fire-extinguisher text-3xl text-blue-600 mb-3"></i>
+                    <h4 class="font-semibold text-blue-900">AFF</h4>
+                    <p class="text-xs text-gray-500 mt-1">Advanced Fire Fighting</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <i class="fa-solid fa-passport text-3xl text-blue-600 mb-3"></i>
+                    <h4 class="font-semibold text-blue-900">Seaman’s Book</h4>
+                    <p class="text-xs text-gray-500 mt-1">Valid National & Passport</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-16 h-1 bg-blue-500 mx-auto rounded"></div>
+                <p class="text-gray-400 mt-4">Available for crew placement, contract inquiries, and global deployment.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div class="bg-gray-800 p-6 rounded-xl flex flex-col items-center md:items-start">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1">Email</h3>
+                    <a href="mailto:stephen.sardon@email.com" class="text-gray-400 hover:text-sky-400 transition">stephen.sardon@email.com</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl flex flex-col items-center md:items-start">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1">Phone / WhatsApp</h3>
+                    <p class="text-gray-400">+63 900 000 0000</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl flex flex-col items-center md:items-start">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-1">Base Location</h3>
+                    <p class="text-gray-400">Ready for Worldwide Deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-500 py-6 text-center text-sm">
+        <p>&copy; 2026 Stephen Sardon. All rights reserved. Designed for maritime excellence.</p>
+    </footer>
+
+    <!-- Script for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
